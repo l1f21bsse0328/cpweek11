@@ -1,0 +1,17 @@
+name: ci workflow
+on: 
+ pull_requests:
+  branches:
+   - develop
+ push_requests:
+  branches:
+   - develop
+jobs:
+ first_job:
+   runs-on: ubantu-latest
+   steps:
+   - name: information gitRepositry
+     run: |
+       echo "Repository name: ${{github.repositry}}"
+       echo "repository owner: ${{github.repositry_owner}}"
+   
