@@ -13,5 +13,5 @@ jobs:
    - name: information gitRepositry
      run: |
        echo "Repository name: ${{github.repositry}}"
-       echo "repository owner: ${{github.repositry_owner}}"
+       echo "repository owners: ${{github.repositry_owner}}"
    
